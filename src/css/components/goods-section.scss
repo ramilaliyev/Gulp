@@ -1,0 +1,16 @@
+.goods-section {
+    background: #F8FAF9;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: url(../../img/decor/Узор_на_фоне_1.png);
+        right: 0;
+        bottom: -20%;
+
+        @include phones {
+            right: -20%;
+            bottom: -25%;
+        }
+    }
+}

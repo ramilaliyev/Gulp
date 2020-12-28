@@ -1,0 +1,56 @@
+.video-section {
+    background: #F8FAF9;
+    position: relative;
+
+    &::after {
+        content: url(../../img/video/blackberry.svg);
+        position: absolute;
+        right: 0;
+        bottom: -17%;
+
+        @include tablets {
+            bottom: -10%;
+        }
+
+        @include phones {
+            right: -6%;
+        }
+    }
+}
+
+.video-container {
+    &::before {
+        position: absolute;
+        content: url(../../img/video/videoLeaf1.svg);
+        left: 5%;
+        bottom: 10%;
+
+        @include tablets {
+            left: -6%;
+            bottom: 25%;
+        }
+
+        @include phones {
+            bottom: -10%;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: url(../../img/video/videoLeaf2.svg);
+        right: 8%;
+
+        @include tablets {
+            right: 4%;
+        }
+
+        @include phones {
+            right: -6%;
+            top: 8%;
+        }
+    }
+}
+
+.video-section__title {
+    margin-bottom: rem(31px);
+}

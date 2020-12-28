@@ -1,0 +1,27 @@
+.team-section {
+    position: relative;
+
+    &::before {
+        content: url(../../img/decor/Ягода-2_1.svg);
+        position: absolute;
+        left: 3%;
+        bottom: -9%;
+        z-index: $z-index-menu +5;
+    }
+
+    &::after {
+        content: url(../../img/decor/Слой_1_1.png);
+        position: absolute;
+        right: 1.1%;
+        top: -5%;
+
+        @include tablets {
+            top: -13%;
+        }
+
+        @include phones {
+            top: -17%;
+            margin-top: 0;
+        }
+    }
+}

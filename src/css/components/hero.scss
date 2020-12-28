@@ -1,0 +1,111 @@
+.hero {
+    background: url("../../img/decor/узор1.png") right bottom no-repeat;
+    background-color: $blue;
+    // height: 100vh;
+    height: 100%;
+    min-height: rem(652px);
+    color: #fff;
+    padding: rem(24px) 0 rem(50px);
+    position: relative;
+
+    @include tablets {
+        background-position: right 2% bottom 93%;
+        &::before, &::after {
+            display: none;
+        }
+    }
+
+    @include phones {
+        background-position: right 2% top 20%;
+        background-size: 70%;
+    }
+
+    &::before {
+        content: url("../../img/decor/Лист3.png");
+        position: absolute;
+        bottom: rem(-40px);
+        left: 3%;
+    }
+
+    &::after {
+        content: url("../../img/decor/leaves_n_berries.png");
+        position: absolute;
+        bottom: rem(-40px);
+        right: 0;
+    }
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background: url("../../img/decor/Батончики.png") right center / 50% auto no-repeat;
+
+    @include tablets {
+        background: none;
+    }
+}
+
+.hero__title-section {
+    width: 46%;
+
+    @include tablets {
+        &::before {
+            content: "";
+            width: rem(316px);
+            height: rem(340px);
+            background: url(../../img/decor/snack768.png) center center / contain no-repeat;
+        }
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+}
+
+.hero__main-title {
+    font-size: rem(48px);
+    font-weight: bold;
+    line-height: 1.195;
+    margin-bottom: rem(14px);
+    text-transform: uppercase;
+
+    @include tablets {
+        letter-spacing: rem(1.5px);
+    }
+
+    @include phones {
+        line-height: 1;
+        letter-spacing: 0;
+        margin-bottom: rem(10px);
+    }
+}
+
+.hero__title-desc {
+    font-size: rem(21px);
+    margin-bottom: rem(60px);
+    padding-right: 15%;
+    line-height: 1;
+
+    @include tablets {
+        padding: 0 27%;
+    }
+
+    @include phones {
+        padding: 0 15%;
+        margin-bottom: rem(28px);
+    }
+}
+
+.hero__icons-section {
+    @include tablets {
+        display: none;
+    }
+}

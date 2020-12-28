@@ -1,0 +1,74 @@
+.products-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.products-menu__item {
+    display: flex;    
+}
+
+.products-menu__button {
+    position: relative;
+    width: rem(100px);
+    background: 40% center/cover no-repeat;
+
+    &::before {
+        content: "";
+        background: rgba(0, 0, 0, .7);
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    &--1 {
+        background-image: url(../../img/menu/cocomilk.jpg);
+    }
+
+    &--2 {
+        background-image: url(../../img/menu/honeyNFruits.jpg);
+    }
+
+    &--3 {
+        background-image: url(../../img/menu/wildberries.jpg);
+    }
+}
+
+.products-menu__button-text {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    left: 50%;
+    bottom: rem(39px);
+    font-size: rem(48px);
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.products-menu__content {
+    background: #35383adc;
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: width .5s;
+    will-change: width;
+}
+
+.products-menu__content-wrapper {
+    padding: rem(30px) rem(80px) rem(45px) rem(38px);
+}
+
+.products-menu__close-button {
+    position: absolute;
+    top: rem(20px);
+    right: rem(20px);
+    border: none;
+    background: transparent;
+    width: rem(25px);
+    height: rem(25px);
+}

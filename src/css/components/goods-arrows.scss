@@ -1,0 +1,27 @@
+.arrow-block {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.tablet-arrow-block {
+    display: none;
+
+    @include tablets {
+        display: flex;
+    }
+}
+
+.arrow-icon {
+    width: rem(40px);
+    height: rem(80px);
+    cursor: pointer;
+    
+
+    @include tablets {
+        margin-bottom: 20rem;    }
+}
+
+.left-arrow-icon {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,31 @@
+.headline {
+    margin-bottom: rem(40px);
+}
+
+.headline__title {
+    margin-bottom: 0;
+
+    @include tablets {
+        letter-spacing: rem(1.5px);
+    }
+
+    @include phones {
+        letter-spacing: 0;
+        font-size: rem(45px);
+    }
+}
+
+.headline__subtitle {
+    padding: 0 26%;
+    text-align: center;
+    margin-bottom: rem(50px);
+
+    @include tablets {
+        padding: 0 20%;
+    }
+
+    @include phones {
+        padding: 0 5%;
+        font-size: rem(18px);
+    }
+}

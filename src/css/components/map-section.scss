@@ -1,0 +1,9 @@
+.map-section {
+    // background: url(../../img/карта.jpg) center center no-repeat;
+    // background-size: cover;
+    position: relative;
+
+    @include phones {
+        margin-top: 0;
+    }
+}

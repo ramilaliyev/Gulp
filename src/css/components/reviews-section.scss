@@ -1,0 +1,42 @@
+.reviews-section {
+    position: relative;
+    background: url(../../img/decor/Узор1.svg) left bottom rem(-164px) no-repeat;
+
+    @include phones {
+        background-position: left bottom rem(-300px);
+    }
+
+    &::before {
+        content: url(../../img/decor/Ягоды2.svg);
+        position: absolute;
+        bottom: rem(-88px);
+        left: 0;
+        z-index: 2; //temp-value
+
+        @include tablets {
+            left: rem(-40px);
+            bottom: rem(-54px);
+        }
+
+        @include phones {
+            bottom: rem(-180px);
+        }
+    }
+
+    &::after {
+        content: url(../../img/decor/Ягода-3_1.svg);
+        position: absolute;
+        top: rem(42px);
+        right: 1.6%;
+
+        @include tablets {
+            top: rem(22px);
+            right: -2.4%;
+        }
+
+        @include phones {
+            top: rem(22px);
+            right: -5.4%;
+        }
+    }
+}

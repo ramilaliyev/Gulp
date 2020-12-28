@@ -1,0 +1,60 @@
+.fixed-menu {
+    position: fixed;
+    top: 30%;
+    right: 3%;
+    z-index: $z-index-menu;
+
+    @include tablets {
+        visibility: hidden;
+    }
+}
+
+.fixed-menu__item {
+    margin-bottom: rem(5px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &--active, &:hover {
+        .fixed-menu__link {
+            border-color: #fff;
+        }
+    }
+}
+
+.fixed-menu__link {
+    width: rem(16px);
+    height: rem(16px);
+    border-radius: 50%;
+    border: rem(1px) solid transparent;
+    display: block;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        height: rem(6px);
+        width: rem(6px);
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.fixed-menu--shadowed {    
+    .fixed-menu__item {
+        &--active, &:hover {
+            .fixed-menu__link {
+                border-color: #000;
+            }
+        }
+    }
+    
+    .fixed-menu__link::before {
+        background: #000;
+    }
+}

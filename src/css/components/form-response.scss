@@ -1,0 +1,44 @@
+.form-response {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: $z-index-menu;
+    background: #313131;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    &--active {
+        display: flex;
+    }
+}
+
+.modal-container {
+    display: flex;
+    justify-content: center;
+}
+
+.modal {
+    background: #fff;
+    height: rem(176px);
+    width: rem(306px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 rem(50px);
+}
+
+.modal__response {
+    color: #000;
+    font-weight: 500;
+    margin-bottom: rem(18px);
+}
+
+.post-error {
+    color: red;
+}

@@ -1,0 +1,25 @@
+.footer {
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: rem(23px) 0;
+
+    @include tablets {
+        padding: rem(23px) rem(30px);
+    }
+}
+
+.container--footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 1.5px;
+        font-size: rem(21px);
+    }
+}

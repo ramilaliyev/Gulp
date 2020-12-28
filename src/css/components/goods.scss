@@ -1,0 +1,162 @@
+.goods-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    // @include tablets {
+    //     position: relative;
+    // }
+
+    .bx-wrapper {
+        background: transparent;
+        box-shadow: none;
+        border: 0;
+        max-width: 85% !important;
+    }
+}
+
+.goods {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+    @include tablets {
+        flex-direction: column;
+        justify-content: center;
+        padding: 150px 0;
+    }
+
+    @include phones {
+        padding: 100px 0;
+    }
+
+}
+
+.goods__img-block {
+    width: 70%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablets {
+        width: 60%;
+    }
+
+    @include phones {
+        width: 80%;
+    }
+}
+
+
+.goods__text {
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    @include tablets {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.goods__title {
+    font-size: rem(36px);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    line-height: rem(43.2px);
+    margin-bottom: 0;
+
+    @include tablets {
+        font-size: rem(30px);
+        margin-bottom: rem(13px);
+        width: 70%;
+        text-align: center;
+    }
+}
+
+.goods__info-text {
+    width: rem(368px);
+    height: rem(218px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablets {
+        width: 70%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    @include phones {
+        margin-bottom: rem(40px);
+    }
+}
+
+.goods__desc {
+    margin-bottom: rem(24px);
+}
+
+.goods__analytics {
+    display: flex;
+    width: 100%;
+
+    @include tablets {
+        text-align: left;
+        width: 50%;
+    }
+
+    @include phones {
+        width: 70%;
+        justify-content: center;
+    }
+}
+
+.goods__analytics-value {
+    font-weight: bold;
+    color: #000;
+}
+
+.goods__calories {
+    width: 50%;
+}
+
+.goods__weight {
+    width: 50%;
+
+    @include phones {
+        margin-left: rem(44px);
+    }
+}
+
+.goods__order {
+    display: flex;
+    width: 100%;
+
+    @include tablets {
+        width: 60%;
+    }
+
+    @include phones {
+        width: 100%;
+    }
+}
+
+.goods__price {
+    font-size: rem(60px);
+    width: 50%;
+    color: #151515;
+    
+}
+
+.goods__order-btn {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}

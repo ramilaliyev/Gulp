@@ -1,0 +1,39 @@
+.benefits-section {
+    position: relative;
+    background: url(../../img/decor/узорлист1.svg) left top 47%  no-repeat;
+
+    @include tablets {
+        background-position: left top 15%;
+    }
+
+    @include phones {
+        background: none;
+    }
+
+    &::before {
+        content: url(../../img/decor/малина1.svg);
+        position: absolute;
+        bottom: rem(-80px);
+        left: 0;
+        z-index: $z-index-menu - 20;
+
+        @include tablets {
+            bottom: rem(-75px);
+        }
+
+        @include phones {
+            display: none;
+        }
+    }
+
+}
+
+.benefits__container {
+    @include tablets {
+        margin-bottom: rem(20px);
+    }
+
+    @include phones {
+        margin-bottom: 20%;
+    }
+}
